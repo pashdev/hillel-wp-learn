@@ -1,0 +1,38 @@
+{
+  "mysite1": {
+    "sitename": "myFirstSite.local",
+    "siteroot_dir": "/var/www/html/myFirstSite",
+    "port": 8080,
+    "siteadmin": "admin@myFirstSite.local",
+    "bakup": {
+      "time": [
+        "0 4 * * *",
+        "0 19 * * *"
+      ],
+      "count": "3"
+    },
+    "db": {
+      "username": "myFirstSiteUser",
+      "password": "strongpwd1",
+      "name": "myFirstSiteDB"
+    }
+  },
+  "musite2": {
+    "sitename": "mySecondSite.local",
+    "siteroot_dir": "/var/www/html/mySecondSite",
+    "port": 8081,
+    "siteadmin": "admin@mySecondSite.local",
+    "db": {
+      "username": "mySecondSiteUser",
+      "password": "strongpwd2",
+      "name": "mySecondSiteDB"
+    },
+    "bakup": {
+      "time": [
+        "30 4 * * *",
+        "30 19 * * *"
+      ],
+      "count": "2"
+    }
+  }
+}
